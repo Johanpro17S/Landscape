@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/calendar1"
+        android:title="Maint" />
+
+    <item
+        android:id="@+id/navigation_spraying"
+        android:icon="@drawable/spraying2"
+        android:title="Spraying" />
+
+    <item
+        android:id="@+id/navigation_park"
+        android:icon="@drawable/park2"
+        android:title="Park" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/alarm_bell2"
+        android:title="Notifications" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/controls"
+        android:title="Settings" />
+</menu>

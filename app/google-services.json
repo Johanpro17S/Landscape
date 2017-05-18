@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "856235756460",
+    "firebase_url": "https://landscapingv3.firebaseio.com",
+    "project_id": "landscapingv3",
+    "storage_bucket": "landscapingv3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856235756460:android:5976001472054c6e",
+        "android_client_info": {
+          "package_name": "com.example.alexeigramajo.landscapingv3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856235756460-6l6lakepooqqq2ojp2be0gk5rfkhf6pl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alexeigramajo.landscapingv3",
+            "certificate_hash": "515cd67e00f3995c99c2cb2bc70c14328074d3f3"
+          }
+        },
+        {
+          "client_id": "856235756460-gsh8evscjc7nsc2hp4kf42rdk1lk54ph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoF271XpStzVbY_G-PldP3gzVY6cNAmi0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856235756460-gsh8evscjc7nsc2hp4kf42rdk1lk54ph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Landscaping Schedule</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_maintenance">Maintenance</string>
+
+    <string name="trimming">Trimming</string>
+    <string name="plants">Plants Remove</string>
+    <string name="mow">Mow</string>
+    <string name="weedeater">Weedeater</string>
+    <string name="edger">Edger</string>
+
+    <string-array name="numOptions">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>
+

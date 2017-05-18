@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titleUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Park"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/updatePark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="right">
+    <Button
+        android:id="@+id/cancelBtnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorAccent"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="CANCEL" />
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorAccent"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="UPDATE" />
+    </LinearLayout>
+</LinearLayout>
