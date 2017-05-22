@@ -1,16 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="20dp">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="200dp"
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:tint="@color/colorWhite"/>
+    <TextView
+        android:id="@+id/monthView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_margin="15dp"
-        android:padding="15dp"/>
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/colorGray"
+        android:textSize="30sp"
+        android:text="Month" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"/>
+    <TextView
+        android:id="@+id/yearView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGray"
+        android:textSize="15sp"
+        android:text="Year"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/monthView" />
+    <View
+        android:layout_width="fill_parent"
+        android:id="@+id/horizontalLine"
+        android:layout_height="0.5dip"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/yearView"
+        android:background="@color/colorAccent" />
 
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_showOtherDates="all"
+        app:mcv_selectionColor="@color/colorAccent"
+        android:layout_below="@+id/horizontalLine" />
 
 </RelativeLayout>

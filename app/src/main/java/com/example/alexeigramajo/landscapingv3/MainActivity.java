@@ -6,11 +6,12 @@ import android.support.design.widget.BottomNavigationView;
 import android.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.example.alexeigramajo.landscapingv3.Fragments.Maintenance;
 import com.example.alexeigramajo.landscapingv3.Fragments.Notifications;
 import com.example.alexeigramajo.landscapingv3.Fragments.Park;
-import com.example.alexeigramajo.landscapingv3.Fragments.Settings;
 import com.example.alexeigramajo.landscapingv3.Fragments.Spraying;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         //Initializing the bottomNavigationView
         bottomNavigationView = (BottomNavigationView)findViewById(R.id.navigation);
         BottomNavigationViewHelper.disableShiftMode(bottomNavigationView);
@@ -41,9 +41,6 @@ public class MainActivity extends AppCompatActivity {
                                 break;
                             case R.id.navigation_notifications:
                                 changeFragment(3);
-                                break;
-                            case R.id.navigation_settings:
-                                changeFragment(4);
                                 break;
                         }
                         return true;
@@ -69,9 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case 3:
                 newFragment = new Notifications();
-                break;
-            case 4:
-                newFragment = new Settings();
                 break;
             default:
                 newFragment = new Spraying();
